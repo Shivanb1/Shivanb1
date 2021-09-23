@@ -1,0 +1,55 @@
+def divisible_five(given_number):
+    my_list = []
+    for i in range(given_number):
+      if i%5 == 0 :
+        my_list.append(i) 
+    return my_list
+
+given_number = int(input())
+divisible_five(given_number)
+
+
+def my_function(given_number):
+  
+  lis3=[]
+  lis7=[]
+  for i in range(given_number):
+    if i%3 == 0 :
+      lis3.append(i)
+    if i%7 ==0:
+      lis7.append(i)
+    s3=sum(lis3)
+    s7=sum(lis7)
+    sumf= s3+s7
+  return sum
+
+
+## your answer aboven
+given_number=int(input())
+my_function(given_number)
+def divisible_five(given_number):
+    my_list = []
+    m_list=[]
+    for i in range(given_number):
+      if i%3 == 0 :
+        my_list.append(i) 
+    s3=sum(my_list)
+    for i in range(given_number):
+      if i%7 == 0:
+        m_list.append(i)
+      s7=sum(m_list)
+      final=s3+s7
+    return final
+
+import os
+os.getcwd()
+import os
+ arr = os.listdir()
+ print(arr)
+
+ f = open("my_script.py", "a")
+f.write("print('Shivani Badinehal')")
+f.close()
+!git init
+!git config — global user.email "stellashivani@gmail.com"
+!git config — global user.name "shivanb1"

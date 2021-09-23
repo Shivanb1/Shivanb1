@@ -1,0 +1,24 @@
+import random
+import matplotlib.pyplot as plt
+
+
+count_t = 500
+biased_value=0
+biased_simulations = []
+mean_biased=[0,0,0,0,0,0]
+options = [1,2,3,4,5,6]
+def biased_die(tr_count, weights=[0.25, 0.15, 0.15, 0.15, 0.15, 0.15]):
+    for j in range(tr_count):
+        biased_value=(random.choices(options,weights))
+        biased_simulations.append(biased_value)
+        l=biased_value[0]
+        mean_biased[l-1]=mean_biased[l-1]+1
+    return biased_simulations
+biased = biased_die(count_t)
+
+
+ax=plt.subplot(1,2,2)
+ax.set_ylabel("number of times")
+ax.set_title('Visualisation2')
+ax.set_xlabel('Die')
+result=ax.bar(options,mean_biased)
