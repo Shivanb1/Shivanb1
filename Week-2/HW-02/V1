@@ -17,7 +17,7 @@ print(average)
 print(tr_count)
 
 
-fig = plt.figure()
+fig = plt.figure();
 ax=plt.subplot(2,2,1)
 ax.set_ylabel('number of Counts')
 ax.set_title('Visualisation1')
