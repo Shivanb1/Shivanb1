@@ -1,5 +1,6 @@
 import statistics
 
+
 count_t = 500
 
 def fair_die(tr_count,count_t):
